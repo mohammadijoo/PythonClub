@@ -1,0 +1,27 @@
+{% extends 'todo/base.html' %}
+
+{% block content %}
+
+
+    <div class="container" style="direction:ltr; margin-top:150px; margin-bottom:120px;  color: white">
+
+  <h2 class="text-left text-white"> User Login </h2>
+    <br>
+  <h4 class="text-left text-white"> {{ error }} </h4>
+    <br>
+
+  <form method="POST">
+    {% csrf_token %}
+    <h5 class="text-left text-white"> {{ form.as_p }} </h5>
+    <h4 class="text-left text-white"> <button type="submit">  Login  </button> </h4>
+  </form>    <br> 
+  
+  <h3 class="text-right text-white" style="direction:rtl;">       درصورتیکه ثبت نام  کرده اید، از تب ثبت نام در منو، ثبت نام نمائید.  </h3>     <br> <br>
+  
+  <h3 class="text-left text-white" style=""> If you didn't register yet, you can register from link on the menu. </h3>
+  
+  
+   </div>
+
+
+{% endblock %}

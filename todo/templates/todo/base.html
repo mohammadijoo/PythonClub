@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="fa-IR">
+<head>
+    
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="به وبسایت پایتون کلاب خوش آمدید!">
+    <meta name="author" content="ابوالفضل محمدی جو">
+		
+	<meta name="keyword" content=" {% block  metaContent %}    {% endblock %}  ">
+		{% load static %}
+		<link rel="shortcut icon" href="{% static 'assets/imgs/Python.png' %} " type="image/x-icon">
+    
+    <title>  {% block title %}  {% endblock %}  </title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="{% static 'assets/vendors/themify-icons/css/themify-icons.css' %}">
+    <!-- Bootstrap + LeadMark main styles -->
+		<link rel="stylesheet" href="{% static 'assets/css/leadmark.css' %} ">
+		<!--<script src="https://kit.fontawesome.com/15084a512e.js" crossorigin="anonymous"></script>-->
+		
+	<link rel="stylesheet" href={% static 'assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css' %} rel="stylesheet">
+    
+    
+		
+	<style>
+    @font-face {
+      font-family: 'BTraffic';
+      src: url({% static 'fonts/BTraffic/BTraffic.eot?#iefix' %}) format('embedded-opentype'),  url({% static 'fonts/BTraffic/BTraffic.woff' %}) format('woff'), url({% static 'fonts/BTraffic/BTraffic.ttf' %})  format('truetype'), url({% static 'fonts/BTraffic/BTraffic.svg#BTraffic' %}) format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+    
+    @font-face {
+      font-family: 'Sahel';
+      src: url({% static 'fonts/Sahel/Sahel.eot?#iefix' %}) format('embedded-opentype'),  url({% static 'fonts/Sahel/Sahel.woff' %}) format('woff'), url({% static 'fonts/Sahel/Sahel.ttf' %})  format('truetype'), url({% static 'fonts/Sahel/Sahel.svg#Sahel' %}) format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+    
+    @font-face {
+      font-family: 'Shabnam';
+      src: url({% static 'fonts/Shabnam/Shabnam.eot?#iefix' %}) format('embedded-opentype'),  url({% static 'fonts/Shabnam/Shabnam.woff' %}) format('woff'), url({% static 'fonts/Shabnam/Shabnam.ttf' %})  format('truetype'), url({% static 'fonts/Shabnam/Shabnam.svg#Shabnam' %}) format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+    
+    @font-face {
+      font-family: 'IranNastaliq';
+      src: url({% static 'fonts/IranNastaliq/IranNastaliq.eot?#iefix' %}) format('embedded-opentype'),  url({% static 'fonts/IranNastaliq/IranNastaliq.woff' %}) format('woff'), url({% static 'fonts/IranNastaliq/IranNastaliq.woff2' %}) format('woff2'), url({% static 'fonts/IranNastaliq/IranNastaliq.ttf' %})  format('truetype'), url({% static 'fonts/IranNastaliq/IranNastaliq.svg#Shabnam' %}) format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+    
+    .text-gradient {
+      background: -webkit-linear-gradient(62deg, #00f260 0%, #0575e6 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .text-gradient2 {
+      background: -webkit-linear-gradient(#00f260 0%, #0575e6 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .myCenter {
+        text-align:center !important;
+    }
+    .firstREM {
+        font-size: 1.8rem !important;
+    }
+    .myHover:hover {
+        background-color: #660000 !important;
+    }
+    .myHover2:hover {
+        color: #ff4c4c !important;
+    }
+    .myHover3:hover {
+        background-color: #CA3433 !important;
+    }	
+    
+    .myCentering {
+       left: 50% !important;
+       transform: translateX(-50%) !important;
+    }
+        
+        {% block cssStyle %}  {% endblock %}
+        
+    </style>
+    
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home" style="font-family:'Shabnam', sans-serif;">
+
+    <!-- page Navigation -->
+    <nav class="navbar custom-navbar navbar-expand-lg navbar-light fixed-top justify-content-center" data-spy="affix" data-offset-top="10" style="direction: rtl; text-align: center">
+        <div class="container ">
+            <a class="navbar-brand" href="https://mohammadijoo.ir" target="_blank">
+                <img src="{% static 'assets/imgs/logo-small.png' %}   " alt="ابوالفضل محمدی جو">
+            </a>
+            <a class="navbar-brand mr-4" href="{% url 'en' %}" >
+                <img src="{% static 'assets/imgs/usa.png' %}"  style="width:50px " alt=" English ">
+            </a>
+            <button class="navbar-toggler ml-left " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="direction: rtl; text-align:center">
+                <span class="navbar-toggler-icon" style="text-align:center"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="direction: rtl">
+                <ul class="navbar-nav ml-auto" >
+					
+			
+						
+					<li class="nav-item">
+							<a class="nav-link" href="{% url 'home' %}">خانه</a>
+					</li>
+					<!--<li class="nav-item">-->
+					<!--		<a class="nav-link" href="{% url 'currenttodos' %}"> پورتال مشاوره </a>-->
+					<!--</li>-->
+					<li class="nav-item">
+							<a class="nav-link" href="{% url 'PythonProjects' %}"  target="_blank"  >پروژه های پایتون</a>
+					</li>
+					<li class="nav-item">
+							<a class="nav-link" href="https://abolfazlm.com" target="_blank">
+								<i class="fa fa-shopping-cart" aria-hidden="true" style="font-size:20px"></i>
+							</a>
+					</li>
+					<li class="nav-item">
+							<a class="nav-link" href="https://programmer-club.ir" target="_blank">
+								<i class="fa fa-code" aria-hidden="true" style="font-size:20px"></i>
+							</a>
+					</li>
+					<li class="nav-item">
+							<a class="nav-link" href="https://aspclub.ir" target="_blank">
+								<i class="fa fa-link" aria-hidden="true" style="font-size:20px"></i>
+							</a>
+					</li>
+					<li class="nav-item">
+							<a class="nav-link" href="https://django3.ir" target="_blank">
+								<i class="fa fa-database" aria-hidden="true" style="font-size:20px"></i>
+							</a>
+					</li>
+					<li class="nav-item">
+							<a class="nav-link" href="https://mohammadijoo.ir/blogfa" target="_blank">
+								<i class="fa fa-rss" aria-hidden="true" style="font-size:20px;"></i>
+							</a>
+					</li>
+
+									
+									
+									
+				 
+     
+     
+                    {% if user.is_authenticated %}
+    	            
+        	            <li class="nav-item dropdown text-center" style="text-align: center !important">
+                          <a class="nav-link dropdown-toggle myHover2 text-center text-gradient" href="#" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="font-size:1.1rem">
+                                  سلام  {% if user.first_name  %}  {{ user.first_name   }}   {% else %}  {{user.username}}    {% endif %}
+                          </a>
+                          <div class="dropdown-menu justify-content-center " aria-labelledby="dropdown05" style="text-align: center !important; min-width:15em">
+                            {% if user.profile.id %}
+                            <a class="dropdown-item myHover3 text-center" href="{% url 'show_profile_page' user.profile.id %}" style="text-align:center; font-size:1rem">  پروفایل </a>
+                            <a class="dropdown-item myHover3 text-center" href="{% url 'edit_profile_page' user.profile.id %}" style="text-align:center; font-size:1rem">   ویرایش پروفایل  </a>
+                            {% else %}
+                            <a class="dropdown-item myHover3 text-center" href="{% url 'create_profile_page' %}" style="text-align:center; font-size:1rem">   ایجاد پروفایل   </a>
+                            {% endif %}
+                          	<a class="dropdown-item myHover3 text-center" href="{% url 'edit_profile' %}" style="text-align:center; font-size:1rem">ویرایش تنظیمات</a>
+                          </div>
+                        </li>
+                        
+                        <li class="nav-item text-center"><a href="{% url 'logout' %}" class="nav-link myHover2" style="font-size:1.1rem">   خروج  </a></li>
+        	            
+        	        {% else %}
+        	            <li class="nav-item text-center"><a href="{% url 'login' %}" class="nav-link myHover2" style="font-size:1.1rem">   ورود  </a></li>
+          
+        	            <li class="nav-item text-center"><a href="{% url 'register' %}" class="nav-link myHover2" style="font-size:1.1rem">   ثبت نام  </a></li>
+        	        {% endif %}
+     
+     
+     
+     
+     
+     
+									
+									
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Of Second Navigation -->
+
+
+
+
+
+  {% block content %} {% endblock %}
+
+
+
+
+<!-- Contact Section -->
+    <section id="contact" class="section has-img-bg pb-0">
+        <div class="container">
+            <div class="row align-items-center" id="myFooter">
+                
+                
+                
+                <div class="col-md-5 my-3">
+                    <h6 class="mb-0">شماره تماس</h6>
+                    <p class="mb-4" id="myPhone"> 8372 490 912 98+ </p>
+
+                    <h6 class="mb-0">آدرس</h6>
+                    <p class="mb-4">
+					خ شهید نامجو (گرگان سابق)، خ انقلاب، تهران، ایران
+										</p>
+
+                    <h6 class="mb-0">ایمیل</h6>
+                    <p class="mb-0">info@pythonclub.ir</p>
+                    <p></p>
+
+					<a href="https://wa.me/989124908372" target="_blank"><i class="fa fa-whatsapp p-2" aria-hidden="true"></i></a>
+          <a href="https://t.me/abolfazlm1363?&text=Abolfazl%2520Mohammadijoo" target="_blank"><i class="fa fa-telegram p-2" aria-hidden="true"></i></a>
+          <a href="https://github.com/mohammadijoo" target="_blank"><i class="fa fa-github p-2" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/abolfazl-mohammadijoo-ab573b6/" target="_blank"><i class="fa fa-linkedin p-2" aria-hidden="true"></i></a>
+					<a href="https://www.youtube.com/channel/UCwG1CdAh6Me3-UeZsyVytLw?view_as=subscriber" target="_blank"><i class="fa fa-youtube p-2" aria-hidden="true"></i></a>
+					<a href="https://twitter.com/mohammadijoo/" target="_blank"><i class="fa fa-twitter p-2" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/abolfazl_m1363/" target="_blank"><i class="fa fa-instagram p-2" aria-hidden="true"></i></a>
+
+                </div>
+                <div class="col-md-7 controls">
+                    
+                    
+                    <form id="contact-form" method="post" action="{% url 'contact' %}" role="form">
+                         {% csrf_token %}
+                    <div class="messages"></div>
+                        <h4 class="mb-4"> پیامی برای ما بنویسید!  </h4>
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                <label for="form_name" style="color:#277ccc">نام * </label>
+                              <input id="form_name" type="text" name="name" class="form-control" placeholder="لطفا نام خود را وارد کنید *" required="required" data-error="لطفا نام را به صورت صحیح وارد کنید.">
+                              <div class="help-block with-errors"></div>
+                            </div>
+                            
+                            <div class="form-group col-sm-4">
+                                <label for="form_email" style="color:#277ccc">ایمیل *</label>
+                                  <input id="form_email" type="email" name="email" class="form-control" placeholder="لطفا ایمیل خود را وارد کنید *" required="required" data-error="لطفا ایمیل را به صورت صحیح وارد کنید.">
+                                  <div class="help-block with-errors"></div>
+                            </div>
+                            
+                            <div class="form-group col-sm-4">
+                                <label for="form_mobile" style="color:#277ccc">شماره تماس *</label>
+                                <input id="form_mobile" type="phone" name="phone" class="form-control" placeholder="لطفا شماره تماس خود را وارد کنید *" required="required" data-error="لطفا شماره تماس را به صورت صحیح وارد کنید.">
+                                <div class="help-block with-errors"></div>    
+                            </div>
+                            
+                            <div class="form-group col-12">
+                                <label for="form_message " style="text-align: right !important; color:#277ccc" >پیغام *</label>
+                                <textarea id="form_message" name="message" class="form-control" placeholder="متن پیام شما *" rows="7" required="required" data-error="Please, leave us a message."></textarea>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            
+                            <div class="form-group col-12 mb-0">
+                                <input type="submit" class="btn btn-success btn-send" value="ارسال پیام">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- Page Footer -->
+            <footer class="mt-5 py-4 border-top border-secondary">
+                <p class="mb-0 small">&copy; <script>document.write(new Date().getFullYear())</script> طراحی توسط، <a href="https://mohammadijoo.ir" target="_blank">  ابوالفضل محمدی جو </a>   </p>
+            </footer>
+            <!-- End of Page Footer -->
+        </div>
+    </section>
+
+	<!-- core  -->
+    <script src="{% static 'assets/vendors/jquery/jquery-3.4.1.js' %}  "></script>
+    <script src="{% static 'assets/vendors/bootstrap/bootstrap.bundle.js' %} "></script>
+
+    <!-- bootstrap 3 affix -->
+	<script src="{% static 'assets/vendors/bootstrap/bootstrap.affix.js' %}  "></script>
+
+    <!-- Isotope -->
+    <script src="{% static 'assets/vendors/isotope/isotope.pkgd.js' %}  "></script>
+
+    <!-- LeadMark js -->
+    <script src="{% static 'assets/js/leadmark.js' %}  "></script>
+
+</body>
+</html>

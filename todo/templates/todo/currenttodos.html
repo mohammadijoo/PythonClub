@@ -1,0 +1,63 @@
+{% extends 'todo/base.html' %}
+
+{% block content %}
+
+
+<div class="row" style="direction:rtl; margin:150px 0 100px 0; color: black">
+    
+  <div class="col-lg-6 text-center">
+    <button class="btn">
+      <h3> 
+          <span class="badge bg-dark"> 
+            <a href="{% url 'createtodo' %}">ایجاد درخواست جدید</a>
+          </span>
+      </h3>
+    </button>
+  </div>
+  
+  <div class="col-lg-6 text-center">
+    <button class="btn">
+      <h3 class="">
+          <span class="badge bg-dark">
+            <a href="{% url 'completedtodos' %}">درخواست های تکمیل شده</a>
+          </span>    
+      </h3>
+    </button>
+  </div>
+
+
+
+<div class="col-lg-12 text-center">
+    <br><br>
+<h1 class="text-center" style="color: #e07bd0">
+    <span class="badge bg-dark">
+       درخواست های جاری
+    </span>
+</h1> <br>
+</div>
+
+
+<div class="col-lg-12 text-center">
+<ul style="list-style-type: none;">
+  {% for todo in todos %}
+  <li>
+    <h3 style="color: #b5add9">
+        
+        <a href="{% url 'viewtodo'  todo.id  %}">
+      {% if todo.important %} <b> {% endif %} {{ todo.title }} {% if todo.important %}
+       </b> {% endif %}
+        </a>
+    
+    </h3>
+    <h4 style="color:#e0dd82">توضیحات درخواست:  {% if todo.memo %} {{ todo.memo }} {% endif %}</h4>
+  </li>
+  <br><hr><br>
+  {% endfor %}
+</ul>
+</div>
+
+
+</div>
+
+
+{% endblock %}

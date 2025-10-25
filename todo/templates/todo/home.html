@@ -1,0 +1,520 @@
+{% extends 'todo/base.html' %}
+
+{% block  metaContent %}  کلاب پایتون، پروژه های پایتون، پروژه های برنامه نویسی پایتون، آموزش پایتون، تدریس پایتون، تدریس خصوصی پایتون، ویدئوی آموزشی پایتون، انجمن پایتون، فروم پایتون  {% endblock %}
+
+{% block title %} پایتون کلاب {% endblock %}
+
+
+
+{% block content %}
+
+{% load static %}
+
+    <!-- Page Header -->
+    <header class="header">
+        <div class="overlay">
+            <h1 class="subtitle" >مخزنی برای ارائه پروژه های پایتون</h1>
+            <h1 class="" style="font-family: 'IranNastaliq'; font-size:7rem">پایتون کلاب</h1>
+        </div>
+        <div class="shape">
+            <svg viewBox="0 0 1500 200">
+                <path d="m 0,240 h 1500.4828 v -71.92164 c 0,0 -286.2763,-81.79324 -743.19024,-81.79324 C 300.37862,86.28512 0,168.07836 0,168.07836 Z"/>
+            </svg>
+        </div>
+        <div class="mouse-icon"><div class="wheel"></div></div>
+    </header>
+    <!-- End Of Page Header -->
+
+    <!-- Service Section -->
+    <section  id="service" class="section pt-0">
+        <div class="container">
+            <h6 class="section-title text-center pt-2" style="color: #4ddff0; font-family: 'IranNastaliq'; font-size:4rem" > حوزه های اصلی پایتون </h6>
+            <h6 class="section-subtitle text-center mb-5 pb-3" style="color: #4ddff0"> تمرکز پروژه های پایتون ما بر 3 حوزه اصلی خواهد بود </h6>
+
+            <div class="row" id="card0">
+                <div class="col-md-4">
+                    <div class="card mb-4 mb-md-0" style="direction:rtl">
+                        <div class="card-body" id="card1">
+                            <small class="text-primary font-weight-bold" >01</small>
+                            <h5 class="card-title mt-3 text-right text-justify">   هوش مصنوعی  <h5>
+                            <p class="mb-0" style="direction:rtl !important">
+															   یکی از کاربردهای وسیع زبان برنامه نویسی پایتون، در حوزه هوش مصنوعی است. این حوزه شامل علوم مختلفی مانند یادگیری ماشین، پردازش زبان طبیعی، بینایی کامپیوتر، شبکه های عصبی، یادگیری عمیق و ... می باشد و کتابخانه های فراوانی مانند Scikit-Learn، TensorFlow، PyTorch، NLTK، OpenCV و ... در زبان پایتون برای این حوزه ها موجود است.
+														</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 mb-md-0">
+                        <div class="card-body" id="card2">
+                            <small class="text-primary font-weight-bold">02</small>
+                            <h5 class="card-title mt-3">علم داده<h5>
+                            <p class="mb-0">
+															علم داده یکی از حوزه های میان رشته ای در علوم است و با حوزه های مثل هوش مصنوعی و ریاضیات اشتراکاتی دارد. علم داده به معنای کار با داده (Data) و استخراج اطلاعات مورد نیاز از آن است و حوزه هایی مانند یادگیری ماشین و آمار و احتمال جزء زیر مجموعه های علم داده هستند. معروف ترین کتابخانه های پایتون مورد استفاده در این حوزه Pandas، NumPy، SciPy، Matplotlib و ... می باشند.
+														</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 mb-md-0">
+                        <div class="card-body" id="card3">
+                            <small class="text-primary font-weight-bold">03</small>
+                            <h5 class="card-title mt-3">   طراحی UI  <h5>
+                            <p class="mb-0">
+																به طور کلی اکثر زبان های برنامه نویسی پر کاربرد و مشهور مانند C++، C#، Java و ... دارای کتابخانه ها یا فریمورک هایی جهت توسعه نرم افزار تحت دسکتاپ می باشند. معروف ترین کتابخانه های پایتون برای این منظور PyQt، GTK3، WxPython، PySide، TkInter و ... می باشند. این حوزه شامل نحوه ارتباط با پایگاه های داده (مانند SQLite، MongoDB و ...) در پایتون جهت ساخت نرم افزار نیز می باشد.
+														</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End OF Service Section -->
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="row justify-content-between" id="about">
+                <div class="col-md-6 pr-md-5 mb-4 mb-md-0">
+                    <h6 class="section-title mb-0"> درباره پایتون کلاب </h6>
+                    <h6 class="section-subtitle mb-4">تمام آنچه از پایتون انتظار دارید!!!</h6>
+                    <p>
+                        
+                        پایتون کلاب وبسایتی است که به زبان پایتون و با فریمورک Django، توسط مهندس ابوالفضل محمدی جو طراحی گردیده است. در این وبسایت، پروژه های کاربردی پایتون در حوزه های مختلف ارائه می گردند. همچنین یک پورتال مشاوره نیز در نظر گرفته شده که در صورتیکه درخواستی اعم از تدریس پایتون یا کتابخانه های آن و یا انجام پروژه های برنامه نویسی یا دریافت سورس کد پروژه ها و ... داشتید، می توانید در وبسایت ثبت نام نموده و از طریق پورتال مشاوره در ارتباط باشید.
+                        
+                        
+                    </p>
+                    <img src="{% static 'assets/imgs/python_club.jpg' %}   " alt="" class="w-100 mt-3 shadow-sm">
+                </div>
+                <div class="col-md-6 pl-md-5">
+                    <div class="row" >
+                        <div class="col-6">
+                            <img src="{% static 'assets/imgs/about-1.jpg' %}  " alt="" class="w-100 shadow-sm">
+                        </div>
+                        <div class="col-6">
+                            <img src="{% static 'assets/imgs/about-2.jpg' %} " alt="" class="w-100 shadow-sm">
+                        </div>
+                        <div class="col-12 mt-4">
+                            <p>
+						مسلما کاربردهای پایتون فراتر از 3 حوزه اصلی ذکرشده در بالا است. دو تا از حوزه های دیگری که پروژه هایی از آن در این کلاب ارائه می گردد، عبارتند از: طراحی وب و طراحی بازی
+														</p>
+                            <p><b>
+طراحی وب شامل فریمورک های جنگو و فلاسک می باشد که وبسایت های حرفه ای و بزرگی در دنیا با این کتابخانه ها توسعه داده شده اند.
+														</b><br></p>
+                            <p>
+						کتابخانه Pygame تا حدودی جنبه سرگرمی و تمرین برنامه نویسی پیشرفته با پایتون را دارد و بازی هایی که امروزه در کنسول های بازی مثل PS5 یا Xbox وجود دارند یا بازی های موبایل و تحت دسکتاپ، اکثرا با سایر زبان های برنامه نویسی مثل سی شارپ نوشته شده اند. وبسایت حاضر (pythonclub.ir) و وبسایت (django3.ir) هر دو با فریمورک Django نوشته شده اند و سوروس کدهای آن ها جهت فروش در این کلاب قرار داده خواهند شد.
+														</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End OF About Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section portfolio-section">
+        <div class="container">
+            <h6 class="section-title text-center" style="color: #AA4A44; font-family: 'IranNastaliq'; font-size:4rem">  طبقه بندی پروژه ها  </h6>
+            <h6 class="section-subtitle mb-5 text-center" style="color: #AA4A44"> پروژه های پایتون بر اساس حوزه مربوطه </h6>
+            <div class="filters">
+                <a href="#" data-filter=".AI" class="active" style="color: #0216fa">
+                     AI
+                </a>
+                <a href="#" data-filter=".DataScience" style="color: #0216fa">
+                    Data
+                </a>
+                <a href="#" data-filter=".UI" style="color: #0216fa">
+                    UI
+                </a>
+                <a href="#" data-filter=".web" style="color: #0216fa">
+                    Web
+                </a>
+				<a href="#" data-filter=".other" style="color: #0216fa">
+                     Other
+                </a>
+            </div>
+            <div class="portfolio-container" id="myPortfolio">
+
+                <div class="col-md-6 col-lg-4 AI new">
+                    <div class="portfolio-item">
+                        <img src="{% static 'assets/imgs/pytorch-1.jpg' %}  " class="img-fluid" alt=" PyTorch Library ">
+												<div class="content-holder">
+                            <a class="img-popup" href="{% static 'assets/imgs/pytorch-1.jpg' %}  "></a>
+							<a href="{% url 'pytorch' %}" target="_blank" >
+    							<div class="text-holder">
+                                    <h6 class="title">هوش مصنوعی</h6>
+                                    <p class="subtitle">  پروژه های کتابخانه PyTorch </p>
+                                </div>
+							</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 AI new">
+                    <div class="portfolio-item">
+                        <div class="content-holder">
+                            <a class="img-popup" href="{% static 'assets/imgs/Scikit-Learn.jpg' %} "></a>
+							<a href="{% url 'scikitlearn' %}" target="_blank">
+    							<div class="text-holder">
+                                <h6 class="title">هوش مصنوعی</h6>
+                                <p class="subtitle">  پروژه های کتابخانه Scikit Learn </p>
+                                </div>
+							</a>
+                        </div>
+                        
+                        <img src="{% static 'assets/imgs/Scikit-Learn.jpg' %} " class="img-fluid" alt="Scikit Learn">
+                    </div>
+                </div>
+				<div class="col-md-6 col-lg-4 AI new">
+                    <div class="portfolio-item">
+                        <img src="{% static 'assets/imgs/TensorFlow.jpg' %}" class="img-fluid" alt="TensorFlow">
+                        <div class="content-holder">
+                            <a class="img-popup" href="{% static 'assets/imgs/TensorFlow.jpg' %} "></a>
+							<a href="{% url 'tenforflow' %}" target="_blank" >
+    							<div class="text-holder">
+                                <h6 class="title">هوش مصنوعی</h6>
+                                 <p class="subtitle"> پروژه های کتابخانه TensorFlow </p>
+                                </div>
+							</a>
+                        </div>
+                    </div>
+                </div>
+				<div class="col-md-6 col-lg-4 AI new"></div>
+				<div class="col-md-6 col-lg-4 AI new">
+                    <div class="portfolio-item">
+                        <img src="{% static 'assets/imgs/OpenCV.jpg' %} " class="img-fluid" alt="OpenCV">
+                        <div class="content-holder">
+                        <a class="img-popup" href="{% static 'assets/imgs/OpenCV.jpg' %}"></a>
+						<a href="{% url 'opencv' %}" target="_blank" >
+						    <div class="text-holder">
+                            <h6 class="title">هوش مصنوعی</h6>
+                            <p class="subtitle"> پروژه های کتابخانه OpenCV </p>
+                            </div>
+						</a>
+                        </div>
+                    </div>
+                </div>
+
+
+				<div class="col-md-6 col-lg-6 web">
+                    <div class="portfolio-item">
+                        <img src="{% static 'assets/imgs/Flask.png' %} " class="img-fluid" alt="Flask Library">
+                        <div class="content-holder">
+                            <a class="img-popup" href="{% static 'assets/imgs/Flask.png' %}"></a>
+							<a href="{% url 'flask' %}" target="_blank">
+                                <div class="text-holder">
+                                <h6 class="title">  کتابخانه Flask  </h6>
+                                <p class="subtitle"> پروژه های کتابخانه Flask </p>
+                                </div>
+							</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 web">
+                    <div class="portfolio-item">
+                        <img src="{% static 'assets/imgs/django.jpg' %}  " class="img-fluid" alt="Django">
+                        <div class="content-holder">
+                            <a class="img-popup" href="{% static 'assets/imgs/django.jpg' %}"></a>
+							<a href="{% url 'django' %}" target="_blank">
+    							<div class="text-holder">
+                                <h6 class="title"> کتابخانه Django </h6>
+                                <p class="subtitle"> پروژه های کتابخانه Django </p>
+                                </div>
+							</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 DataScience">
+                    <div class="portfolio-item">
+                        <img src="{% static 'assets/imgs/numpy.png' %} " class="img-fluid" alt="NumPy">
+                        <div class="content-holder">
+                        <a class="img-popup" href="{% static 'assets/imgs/numpy.png' %}"></a>
+						<a href="{% url 'numpy' %}" target="_blank">
+                            <div class="text-holder">
+                            <h6 class="title"> کتابخانه NumPy </h6>
+                            <p class="subtitle">  پروژه های کتابخانه NumPy  </p>
+                            </div>
+						</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 DataScience">
+                    <div class="portfolio-item">
+                        <img src="{% static 'assets/imgs/pandas.png' %}  " class="img-fluid" alt="Pandas">
+                        <div class="content-holder">
+                        <a class="img-popup" href="{% static 'assets/imgs/pandas.png' %}"></a>
+						<a href="{% url 'pandas' %}" target="_blank">
+                            <div class="text-holder">
+                            <h6 class="title">  کتابخانه Pandas </h6>
+                            <p class="subtitle">  پروژه های کتابخانه Pandas </p>
+                            </div>
+						</a>
+                        </div>
+                    </div>
+                </div>
+
+				<div class="col-md-6 col-lg-4 DataScience">
+                    <div class="portfolio-item">
+                        <img src="{% static 'assets/imgs/SciPy.jpg' %}   " class="img-fluid" alt="SciPy">
+                       <div class="content-holder">
+                        <a class="img-popup" href="{% static 'assets/imgs/SciPy.jpg' %}"></a>
+						<a href="{% url 'scipy' %}" target="_blank">
+                            <div class="text-holder">
+                            <h6 class="title"> کتابخانه SciPy </h6>
+                            <p class="subtitle"> پروژه های کتابخانه SciPy </p>
+                            </div>
+						</a>
+                        </div>
+                    </div>
+                </div>
+				<div class="col-md-6 col-lg-4 DataScience"></div>
+					<div class="col-md-6 col-lg-4 DataScience">
+                    <div class="portfolio-item">
+                        <img src="{% static 'assets/imgs/Matplotlib.png' %}  " class="img-fluid" alt="Matplotlib">
+                        <div class="content-holder">
+                        <a class="img-popup" href="{% static 'assets/imgs/Matplotlib.png' %}"></a>
+						<a href="{% url 'matplotlib' %}" target="_blank">
+                            <div class="text-holder">
+                            <h6 class="title">   کتابخانه Matplotlib  </h6>
+                            <p class="subtitle">  پروژه های کتابخانه Matplotlib   </p>
+                            </div>
+						</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 UI">
+                    <div class="portfolio-item">
+                        <img src="{% static 'assets/imgs/WxPython.png' %} " class="img-fluid" alt="wxPython">
+                        <div class="content-holder">
+                        <a class="img-popup" href="{% static 'assets/imgs/WxPython.png' %}"></a>
+						<a href="{% url 'wxpython' %}" target="_blank">
+                            <div class="text-holder">
+                            <h6 class="title"> کتابخانه WxPython </h6>
+                            <p class="subtitle"> پروژه های کتابخانه WxPython </p>
+                            </div>
+						</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 UI">
+                    <div class="portfolio-item">
+                        <img src="{% static 'assets/imgs/gtk.png' %}   " class="img-fluid" alt="GTK">
+                        <div class="content-holder">
+                            <a class="img-popup" href="{% static 'assets/imgs/gtk.png' %} "></a>
+							<a href="{% url 'gtk' %}" target="_blank">
+                                <div class="text-holder">
+                                <h6 class="title"> کتابخانه GTK </h6>
+                                <p class="subtitle"> پروژه های کتابخانه GTK </p>
+                                </div>
+							</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 UI">
+                    <div class="portfolio-item">
+                        <img src="{% static 'assets/imgs/PyQt.jpg' %} " class="img-fluid" alt="PyQt">
+                        <div class="content-holder">
+                        <a class="img-popup" href="{% static 'assets/imgs/PyQt.jpg' %}"></a>
+						<a href="{% url 'pyqt' %}" target="_blank">
+                            <div class="text-holder">
+                            <h6 class="title"> کتابخانه PyQt </h6>
+                            <p class="subtitle"> پروژه های کتابخانه PyQt </p>
+                            </div>
+						</a>
+                        </div>
+                    </div>
+                </div>
+								<div class="col-md-6 col-lg-4 UI">
+                    <div class="portfolio-item">
+                        <img src="{% static 'assets/imgs/Tkinter.jpg' %} " class="img-fluid" alt="TKinter">
+                        <div class="content-holder">
+                            <a class="img-popup" href="{% static 'assets/imgs/Tkinter.jpg' %}"></a>
+							<a href="{% url 'tkinter' %}" target="_blank">
+                                <div class="text-holder">
+                                <h6 class="title"> کتابخانه Tkinter </h6>
+                                <p class="subtitle"> پروژه های کتابخانه Tkinter  </p>
+                                </div>
+							</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 UI">
+                    <div class="portfolio-item">
+                        <img src="{% static 'assets/imgs/Pyside.jpg' %} " class="img-fluid" alt="PySide">
+                        <div class="content-holder">
+                            <a class="img-popup" href="{% static 'assets/imgs/Pyside.jpg' %}"></a>
+							<a href="{% url 'pyside' %}" target="_blank">
+                                <div class="text-holder">
+                                <h6 class="title">  کتابخانه Pyside </h6>
+                                <p class="subtitle">  پروژه های کتابخانه Pyside </p>
+                                </div>
+							</a>
+                        </div>
+                    </div>
+                </div>
+				<div class="col-md-6 col-lg-4 UI">
+                    <div class="portfolio-item">
+                        <img src="{% static 'assets/imgs/Python-Sqlite.jpg' %} " class="img-fluid" alt="SQLite">
+                        <div class="content-holder">
+                        <a class="img-popup" href="{% static 'assets/imgs/Python-Sqlite.jpg' %}"></a>
+						<a href="{% url 'sqlite' %}" target="_blank">
+                            <div class="text-holder">
+                            <h6 class="title">     کتابخانه SQLite3 </h6>
+                            <p class="subtitle">  پروژه های کتابخانه SQLite </p>
+                            </div>
+						</a>
+                        </div>
+                    </div>
+                </div>
+
+				<div class="col-md-6 col-lg-4 other">
+                    <div class="portfolio-item">
+                        <img src="{% static 'assets/imgs/pygame.jpg' %}  " class="img-fluid" alt=" Pygame Library ">
+                        <div class="content-holder">
+                        <a class="img-popup" href="{% static 'assets/imgs/pygame.jpg' %}"></a>
+						<a href="{% url 'pygame' %}" target="_blank">
+                            <div class="text-holder">
+                            <h6 class="title"> کتابخانه Pygame </h6>
+                            <p class="subtitle"> پروژه های کتابخانه Pygame </p>
+                            </div>
+						</a>
+                        </div>
+                    </div>
+                </div>
+								<div class="col-md-6 col-lg-4 other">
+                    <div class="portfolio-item">
+                        <img src="{% static 'assets/imgs/oop.png' %} " class="img-fluid" alt="OOP">
+                        <div class="content-holder">
+                            <a class="img-popup" href="{% static 'assets/imgs/oop.png' %}"></a>
+							<a href="{% url 'oop' %}" target="_blank">
+                                <div class="text-holder">
+                                <h6 class="title">  شیء گرایی در پایتون  </h6>
+                                <p class="subtitle">پروژه های پایتون پیشرفته (شیء گرایی در پایتون) </p>
+                                </div>
+							</a>
+                        </div>
+                    </div>
+                </div>
+				<div class="col-md-6 col-lg-4 other">
+                    <div class="portfolio-item">
+                        <img src="{% static 'assets/imgs/design-patterns-python.png' %} " class="img-fluid" alt="Design Patterns">
+                        <div class="content-holder">
+                        <a class="img-popup" href="{% static 'assets/imgs/design-patterns-python.png' %}"></a>
+						<a href="{% url 'designpattern' %}" target="_blank">
+                            <div class="text-holder">
+                            <h6 class="title">   الگوهای طراحی در پایتون </h6>
+                            <p class="subtitle">   پروژه های مرتبط با الگوهای طراحی در پایتون   </p>
+                            </div>
+						</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End of portfolio section -->
+
+    <!-- Blog Section -->
+    <section class="section" id="blog">
+        <div class="container">
+            <h6 class="section-title mb-0 text-center">   پروژه های اخیر </h6>
+            <h6 class="section-subtitle mb-5 text-center"> آخرین پروژه های قرار گرفته در پایتون کلاب </h6>
+
+            <div class="row" id="latestProjects">
+                <div class="col-md-4">
+                    <div class="card border-0 mb-4">
+                        <img src="{% static 'assets/imgs/OpenCV-Project.jpg' %}   " alt="" class="card-img-top w-100">
+                        <div class="card-body">
+                        <h6 class="card-title">پروژه تشخیص چهره</h6>
+                        <p>  تشخیص چهره به کمک کتابخانه OpenCV و طراحی UI با کتابخانه PyQt </p>
+                        <a href="http://vid.mohammadijoo.ir/pythonclub/Face_Detection.mp4" class="small text-muted"> ویدئوی پیش نمایش پروژه </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 mb-4">
+                        <img src="{% static 'assets/imgs/HeadBall2.jpg' %} " alt="" class="card-img-top w-100">
+                        <div class="card-body">
+                            <h6 class="card-title">  پروژه HeadBall2 </h5>
+                            <p>  بازی HeadBall دو نفره با Pygame </p>
+                            <a href="http://vid.mohammadijoo.ir/pythonclub/HeadBall_2Player.mp4" class="small text-muted"> ویدئوی پیش نمایش پروژه </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 mb-4">
+                        <img src="{% static 'assets/imgs/Swap_Color_Game.jpg' %}  " alt="" class="card-img-top w-100">
+                        <div class="card-body">
+                            <h6 class="card-title"> پروژه جدول متقاطع </h6>
+                            <p> تغییر رنگ خانه جدول مقاطع در Pygame </p>
+                            <a href="http://vid.mohammadijoo.ir/pythonclub/Swap_Color_Game.mp4" class="small text-muted" target="_blank"> ویدئوی پیش نمایش پروژه </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Blog Section -->
+
+    <!-- Testmonial Section -->
+		<!--
+    <section class="section" id="testmonial">
+        <div class="container">
+            <h6 class="section-title text-center mb-0">Testmonials</h6>
+            <h6 class="section-subtitle mb-5 text-center">What Our Clients Says</h6>
+            <div class="row">
+                <div class="col-md-4 my-3 my-md-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="media align-items-center mb-3">
+                                <img class="mr-3" src="assets/imgs/avatar.jpg" alt="">
+                                <div class="media-body">
+                                    <h6 class="mt-1 mb-0">John Doe</h6>
+                                    <small class="text-muted mb-0">Business Analyst</small>
+                                </div>
+                            </div>
+                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus enim modi, id dicta reiciendis itaque.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 my-3 my-md-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="media align-items-center mb-3">
+                                <img class="mr-3" src="assets/imgs/avatar-1.jpg" alt="">
+                                <div class="media-body">
+                                    <h6 class="mt-1 mb-0">Maria Garcia</h6>
+                                    <small class="text-muted mb-0">Insurance Agent</small>
+                                </div>
+                            </div>
+                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus enim modi, id dicta reiciendis itaque.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 my-3 my-md-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="media align-items-center mb-3">
+                                <img class="mr-3" src="assets/imgs/avatar-2.jpg" alt="">
+                                <div class="media-body">
+                                    <h6 class="mt-1 mb-0">Mason Miller</h6>
+                                    <small class="text-muted mb-0">Residential Appraiser</small>
+                                </div>
+                            </div>
+                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus enim modi, id dicta reiciendis itaque.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+		-->
+    <!-- End of Testmonial Section -->
+
+    
+
+{% endblock %}
+
+

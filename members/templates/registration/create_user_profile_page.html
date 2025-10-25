@@ -1,0 +1,97 @@
+{% extends 'todo/base-en.html' %}
+
+{% block title %} Create A New Profile Page   {% endblock %}
+
+{% block  metaContent %}  {% endblock %}
+
+
+{% block cssStyle %}  
+
+textarea.form-control {
+  height: 20rem !important; 
+  color: white !important; 
+}
+input {
+    color: white !important; 
+    font-weight: 700 !important;
+}
+<!--::-webkit-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */-->
+<!--  color: white;-->
+<!--}-->
+<!--:-moz-placeholder { -->
+<!--  color: white;-->
+<!--}-->
+<!--::-moz-placeholder { /* Microsoft Edge */-->
+<!--  color: white;-->
+<!--}-->
+<!--:-ms-input-placeholder { /* Microsoft Edge */-->
+<!--  color: white;-->
+<!--}-->
+body {
+    background-image: linear-gradient(to right, #2c3e50, #4ca1af); !important;
+}
+{% endblock %}
+
+
+{% block content %}
+
+
+<div class="container text-white" style="margin-top:8rem; margin-bottom:8rem">
+    <h1 style="font-family: 'Caveat Brush', cursive;color:#DCC7AA" class="text-center mt-4 mb-4">
+        Create Profile Page
+    </h1>
+    <br>
+    
+    {% if user.is_authenticated  %}
+    
+    
+            <div class="form-group text-white" style="color:white !important; font-weight: 700 !important;">
+                <form method='POST' enctype="multipart/form-data" class="text-white" style="color:white !important; font-weight: 700 !important;">
+                    {% csrf_token %}
+
+                    {{ form.as_p }}
+                    
+
+                    
+                    <button class="btn btn-secondary"> Create Profile Page </button>
+                </form>
+            </div>
+            
+            
+    
+    {% else %}
+    
+        <h1 class="text-white mt-4 mb-4"> 
+            You Are not Authenticated to Add Posts! 
+        </h1>
+    
+    {% endif %}
+    
+    
+    
+            <script>
+                document.getElementById("id_bio").className = "form-control";  
+                document.getElementById("id_website_url").className = "form-control";
+                document.getElementById("id_linkedin_url").className = "form-control";
+                document.getElementById("id_github_url").className = "form-control";
+                document.getElementById("id_stackoverflow_url").className = "form-control";
+                document.getElementById("id_instagram_url").className = "form-control";
+                document.getElementById("id_twitter_url").className = "form-control";
+                
+                document.getElementById("id_website_url").placeholder = "Always write complete url with https.   like:   https://google.com"; 
+                document.getElementById("id_linkedin_url").placeholder = "Always write complete url with https.   like:   https://google.com";
+                document.getElementById("id_github_url").placeholder = "Always write complete url with https.   like:   https://google.com";
+                document.getElementById("id_stackoverflow_url").placeholder = "Always write complete url with https.   like:   https://google.com";
+                document.getElementById("id_instagram_url").placeholder = "Always write complete url with https.   like:   https://google.com";
+                document.getElementById("id_twitter_url").placeholder = "Always write complete url with https.   like:   https://google.com";
+            </script>
+    
+    
+    
+</div>
+
+
+
+
+
+{% endblock %}

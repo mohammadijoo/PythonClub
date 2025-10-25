@@ -1,0 +1,528 @@
+{% extends 'todo/base-en.html' %}
+
+{% block title %} Python Club  {% endblock %}
+
+{% block  metaContent %}  Python Club, Python Forum, Python Projects, Python Tutorial, Python Video Lecture, Python Tutor, Python Programming Projects, Python Online Tutor  {% endblock %}
+
+{% block content %}
+
+{% load static %}
+
+    <!-- Page Header -->
+    <header class="header">
+        <div class="overlay">
+            <h1 class="subtitle">  A Repository for Python Projects      </h1>
+            <h1 class="title">  Python Club   </h1>
+        </div>
+        <div class="shape">
+            <svg viewBox="0 0 1500 200">
+                <path d="m 0,240 h 1500.4828 v -71.92164 c 0,0 -286.2763,-81.79324 -743.19024,-81.79324 C 300.37862,86.28512 0,168.07836 0,168.07836 Z"/>
+            </svg>
+        </div>
+        <div class="mouse-icon"><div class="wheel"></div></div>
+    </header>
+    <!-- End Of Page Header -->
+
+    <!-- Service Section -->
+    <section  id="service" class="section pt-0">
+        <div class="container" style="direction: ltr">
+            <h6 class="section-title text-center pt-2" style="color: #4ddff0">   The Main Applications of Python Programming </h6>
+            <h6 class="section-subtitle text-center mb-5 pb-3" style="color: #4ddff0">   Our Python projects will focus on 3 main fields.  </h6>
+
+            <div class="row" id="card0">
+                <div class="col-md-4" style="direction: ltr">
+                    <div class="card mb-4 mb-md-0" style="direction:ltr">
+                        <div class="card-body" id="card1">
+                            <small class="text-primary font-weight-bold" >01</small>
+                            <h5 class="card-title mt-3 text-left">   Artificial Intelligence  <h5>
+                            <p class="mb-0" style="direction:ltr !important">
+							One of the wide applications of Python programming language is in the field of Artificial Intelligence. 
+ 							This field includes various subfields such as machine learning, natural language processing, computer vision, neural networks, deep learning, etc., 
+ 							and many libraries such as Scikit-Learn, TensorFlow, PyTorch, NLTK, OpenCV, etc. are available in Python for these fields.
+							</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" style="direction: ltr">
+                    <div class="card mb-4 mb-md-0" style="direction: ltr">
+                        <div class="card-body" id="card2">
+                            <small class="text-primary font-weight-bold ">02</small>
+                            <h5 class="card-title mt-3 text-left">  Data Science <h5>
+                            <p class="mb-0 text-justify" style="direction: ltr">
+ 							Data science is one of the interdisciplinary fields in science and has commonalities with fields such as artificial intelligence and mathematics. 
+ 							Data science means working with data and extracting the required information from it, and fields such as machine learning, statistics and probability are subsets of data science. 
+ 							The most famous Python libraries used in this field are Pandas, NumPy, SciPy, Matplotlib, etc.
+ 							</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" style="direction: ltr">
+                    <div class="card mb-4 mb-md-0" style="direction: ltr">
+                        <div class="card-body" id="card3">
+                            <small class="text-primary font-weight-bold text-left" style="direction: ltr">03</small>
+                            <h5 class="card-title mt-3 text-left">   UI Design <h5>
+                            <p class="mb-0"  style="direction: ltr">
+                                In general, most popular and widely used programming languages such as C++, C#, Java, etc. have libraries or frameworks for desktop software development. 
+                                The most famous Python libraries for this purpose are PyQt, GTK3, WxPython, PySide, TkInter, etc. This field includes how to communicate with databases (such as SQLite, MongoDB, etc.) in Python to build software.
+							</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End OF Service Section -->
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="row justify-content-between" id="about" style="direction: ltr">
+                <div class="col-md-6 pr-md-5 mb-4 mb-md-0" style="direction: ltr">
+                    <h6 class="section-title mb-0">  About Python Club </h6>
+                    <h6 class="section-subtitle mb-4">   Everything you expect from Python!!!  </h6>
+                    <p>
+                        Python Club is a website designed in Python language and Django framework by engineer Abolfazl Mohammadijo. 
+                        In this website, Python application projects are presented in various fields. 
+                        Also, a consulting portal has been considered, and if you have a request, whether teaching Python or its libraries, or doing programming projects, or receiving the source code of projects, etc., 
+                        you can register on the website and be in touch through the consulting portal.
+                    </p>
+                    <img src="{% static 'assets/imgs/python_club.jpg' %}   " alt="" class="w-100 mt-3 shadow-sm">
+                </div>
+                <div class="col-md-6 pl-md-5" style="direction: ltr">
+                    <div class="row" >
+                        <div class="col-6">
+                            <img src="{% static 'assets/imgs/about-1.jpg' %}  " alt="" class="w-100 shadow-sm">
+                        </div>
+                        <div class="col-6">
+                            <img src="{% static 'assets/imgs/about-2.jpg' %} " alt="" class="w-100 shadow-sm">
+                        </div>
+                        <div class="col-12 mt-4">
+                            <p>
+							Of course, the uses of Python go beyond the 3 main areas mentioned above. Two of the other fields from which projects are presented in this club are: web design and game design
+							Web design includes Django and Flask frameworks, which are developed by professional and large websites in the world with these libraries.
+							The Pygame library is to some extent entertainment and advanced programming practice with Python, and the games that exist today in game consoles such as PS5 or Xbox, or mobile games and under the desktop, are mostly written with other programming languages such as C#. 
+							The current website (pythonclub.ir) and the website (django3.ir) are both written with the Django framework, and their source codes will be placed for sale in this club.
+							</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End OF About Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section portfolio-section">
+        <div class="container">
+            <h6 class="section-title text-center" style="color: #4ddff0">    Classification of Projects </h6>
+            <h6 class="section-subtitle mb-5 text-center" style="color: #4ddff0">  Python Projects Based on the Relevant Field   </h6>
+            <div class="filters">
+                <a href="#" data-filter=".AI" class="active" style="color: #0216fa">
+                     AI
+                </a>
+                <a href="#" data-filter=".DataScience" style="color: #0216fa">
+                    Data
+                </a>
+                <a href="#" data-filter=".UI" style="color: #0216fa">
+                    UI
+                </a>
+                <a href="#" data-filter=".web" style="color: #0216fa">
+                    Web
+                </a>
+				<a href="#" data-filter=".other" style="color: #0216fa">
+                     Other
+                </a>
+            </div>
+            <div class="portfolio-container" id="myPortfolio">
+
+                <div class="col-md-6 col-lg-4 AI new">
+                    <div class="portfolio-item">
+                        <img src="{% static 'assets/imgs/pytorch-1.jpg' %}  " class="img-fluid" alt=" PyTorch Library ">
+												<div class="content-holder">
+                            <a class="img-popup" href="{% static 'assets/imgs/pytorch-1.jpg' %}  "></a>
+							<a href="{% url 'pytorchEn' %}" target="_blank" >
+    							<div class="text-holder">
+                                    <h6 class="title">Artificial Intelligence</h6>
+                                    <p class="subtitle">  PyTorch Library Projects </p>
+                                </div>
+							</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 AI new">
+                    <div class="portfolio-item">
+                        <img src="{% static 'assets/imgs/Scikit-Learn.jpg' %} " class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
+                            <a class="img-popup" href="{% static 'assets/imgs/Scikit-Learn.jpg' %} "></a>
+							<a href="{% url 'scikitlearnEn' %}" target="_blank">
+    							<div class="text-holder">
+                                <h6 class="title">Artificial Intelligence</h6>
+                                <p class="subtitle"> Scikit Learn Library Projects </p>
+                                </div>
+							</a>
+                        </div>
+                    </div>
+                </div>
+				<div class="col-md-6 col-lg-4 AI new">
+                    <div class="portfolio-item">
+                        <img src="{% static 'assets/imgs/TensorFlow.jpg' %}" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
+                            <a class="img-popup" href="{% static 'assets/imgs/TensorFlow.jpg' %} "></a>
+							<a href="{% url 'tenforflowEn' %}" target="_blank" >
+    							<div class="text-holder">
+                                <h6 class="title">Artificial Intelligence</h6>
+                                 <p class="subtitle">  TensorFlow Library Projects </p>
+                                </div>
+							</a>
+                        </div>
+                    </div>
+                </div>
+				<div class="col-md-6 col-lg-4 AI new"></div>
+				<div class="col-md-6 col-lg-4 AI new">
+                    <div class="portfolio-item">
+                        <img src="{% static 'assets/imgs/OpenCV.jpg' %} " class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
+                        <a class="img-popup" href="{% static 'assets/imgs/OpenCV.jpg' %}"></a>
+						<a href="{% url 'opencvEn' %}" target="_blank" >
+						    <div class="text-holder">
+                            <h6 class="title">Artificial Intelligence</h6>
+                            <p class="subtitle"> OpenCV Library Projects </p>
+                            </div>
+						</a>
+                        </div>
+                    </div>
+                </div>
+
+
+				<div class="col-md-6 col-lg-6 web">
+                    <div class="portfolio-item">
+                        <img src="{% static 'assets/imgs/Flask.png' %} " class="img-fluid" alt="Flask Library">
+                        <div class="content-holder">
+                            <a class="img-popup" href="{% static 'assets/imgs/Flask.png' %}"></a>
+							<a href="{% url 'flaskEn' %}" target="_blank">
+                                <div class="text-holder">
+                                <h6 class="title">    Web Development  </h6>
+                                <p class="subtitle">  Flask Library Projects </p>
+                                </div>
+							</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 web">
+                    <div class="portfolio-item">
+                        <img src="{% static 'assets/imgs/django.jpg' %}  " class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
+                            <a class="img-popup" href="{% static 'assets/imgs/django.jpg' %}"></a>
+							<a href="{% url 'djangoEn' %}" target="_blank">
+    							<div class="text-holder">
+                                <h6 class="title">   Web Development </h6>
+                                <p class="subtitle"> Django Library Projects </p>
+                                </div>
+							</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 DataScience">
+                    <div class="portfolio-item">
+                        <img src="{% static 'assets/imgs/numpy.png' %} " class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
+                        <a class="img-popup" href="{% static 'assets/imgs/numpy.png' %}"></a>
+						<a href="{% url 'numpyEn' %}" target="_blank">
+                            <div class="text-holder">
+                            <h6 class="title">   Data Science </h6>
+                            <p class="subtitle">  NumPy Library Projects </p>
+                            </div>
+						</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 DataScience">
+                    <div class="portfolio-item">
+                        <img src="{% static 'assets/imgs/pandas.png' %}  " class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
+                        <a class="img-popup" href="{% static 'assets/imgs/pandas.png' %}"></a>
+						<a href="{% url 'pandasEn' %}" target="_blank">
+                            <div class="text-holder">
+                            <h6 class="title">  Data Science </h6>
+                            <p class="subtitle">  Pandas Library Projects </p>
+                            </div>
+						</a>
+                        </div>
+                    </div>
+                </div>
+
+				<div class="col-md-6 col-lg-4 DataScience">
+                    <div class="portfolio-item">
+                        <img src="{% static 'assets/imgs/SciPy.jpg' %}   " class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                       <div class="content-holder">
+                        <a class="img-popup" href="{% static 'assets/imgs/SciPy.jpg' %}"></a>
+						<a href="{% url 'scipyEn' %}" target="_blank">
+                            <div class="text-holder">
+                            <h6 class="title">   Data Science </h6>
+                            <p class="subtitle">  SciPy Library Projects </p>
+                            </div>
+						</a>
+                        </div>
+                    </div>
+                </div>
+				<div class="col-md-6 col-lg-4 DataScience"></div>
+					<div class="col-md-6 col-lg-4 DataScience">
+                    <div class="portfolio-item">
+                        <img src="{% static 'assets/imgs/Matplotlib.png' %}  " class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
+                        <a class="img-popup" href="{% static 'assets/imgs/Matplotlib.png' %}"></a>
+						<a href="{% url 'matplotlibEn' %}" target="_blank">
+                            <div class="text-holder">
+                            <h6 class="title">  Data Science  </h6>
+                            <p class="subtitle"> Matplotlib Library Projects </p>
+                            </div>
+						</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 UI">
+                    <div class="portfolio-item">
+                        <img src="{% static 'assets/imgs/WxPython.png' %} " class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
+                        <a class="img-popup" href="{% static 'assets/imgs/WxPython.png' %}"></a>
+						<a href="{% url 'wxpythonEn' %}" target="_blank">
+                            <div class="text-holder">
+                            <h6 class="title">  UI Design </h6>
+                            <p class="subtitle">   WxPython Library Projects </p>
+                            </div>
+						</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 UI">
+                    <div class="portfolio-item">
+                        <img src="{% static 'assets/imgs/gtk.png' %}   " class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
+                            <a class="img-popup" href="{% static 'assets/imgs/gtk.png' %} "></a>
+							<a href="{% url 'gtkEn' %}" target="_blank">
+                                <div class="text-holder">
+                                <h6 class="title">   UI Design </h6>
+                                <p class="subtitle">  GTK Library Projects </p>
+                                </div>
+							</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 UI">
+                    <div class="portfolio-item">
+                        <img src="{% static 'assets/imgs/PyQt.jpg' %} " class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
+                        <a class="img-popup" href="{% static 'assets/imgs/PyQt.jpg' %}"></a>
+						<a href="{% url 'pyqtEn' %}" target="_blank">
+                            <div class="text-holder">
+                            <h6 class="title">   UI Design </h6>
+                            <p class="subtitle">  PyQt Library Projects </p>
+                            </div>
+						</a>
+                        </div>
+                    </div>
+                </div>
+								<div class="col-md-6 col-lg-4 UI">
+                    <div class="portfolio-item">
+                        <img src="{% static 'assets/imgs/Tkinter.jpg' %} " class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
+                            <a class="img-popup" href="{% static 'assets/imgs/Tkinter.jpg' %}"></a>
+							<a href="{% url 'tkinterEn' %}" target="_blank">
+                                <div class="text-holder">
+                                <h6 class="title">   UI Design </h6>
+                                <p class="subtitle">     Tkinter Library Projects </p>
+                                </div>
+							</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 UI">
+                    <div class="portfolio-item">
+                        <img src="{% static 'assets/imgs/Pyside.jpg' %} " class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
+                            <a class="img-popup" href="{% static 'assets/imgs/Pyside.jpg' %}"></a>
+							<a href="{% url 'pysideEn' %}" target="_blank">
+                                <div class="text-holder">
+                                <h6 class="title">  UI Design </h6>
+                                <p class="subtitle"> Pyside Library Projects </p>
+                                </div>
+							</a>
+                        </div>
+                    </div>
+                </div>
+				<div class="col-md-6 col-lg-4 UI">
+                    <div class="portfolio-item">
+                        <img src="{% static 'assets/imgs/Python-Sqlite.jpg' %} " class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
+                        <a class="img-popup" href="{% static 'assets/imgs/Python-Sqlite.jpg' %}"></a>
+						<a href="{% url 'sqliteEn' %}" target="_blank">
+                            <div class="text-holder">
+                            <h6 class="title">   UI Design  </h6>
+                            <p class="subtitle">  SQLite Library Projects  </p>
+                            </div>
+						</a>
+                        </div>
+                    </div>
+                </div>
+
+				<div class="col-md-6 col-lg-4 other">
+                    <div class="portfolio-item">
+                        <img src="{% static 'assets/imgs/pygame.jpg' %}  " class="img-fluid" alt=" Pygame Library ">
+                        <div class="content-holder">
+                        <a class="img-popup" href="{% static 'assets/imgs/pygame.jpg' %}"></a>
+						<a href="{% url 'pygameEn' %}" target="_blank">
+                            <div class="text-holder">
+                            <h6 class="title">   Pygame Library </h6>
+                            <p class="subtitle">  Pygame Library Projects  </p>
+                            </div>
+						</a>
+                        </div>
+                    </div>
+                </div>
+								<div class="col-md-6 col-lg-4 other">
+                    <div class="portfolio-item">
+                        <img src="{% static 'assets/imgs/oop.png' %} " class="img-fluid" alt=" Pygame Library ">
+                        <div class="content-holder">
+                            <a class="img-popup" href="{% static 'assets/imgs/oop.png' %}"></a>
+							<a href="{% url 'oopEn' %}" target="_blank">
+                                <div class="text-holder">
+                                <h6 class="title">   Object Oriented Programming in Python   </h6>
+                                <p class="subtitle">  OOP Examples  </p>
+                                </div>
+							</a>
+                        </div>
+                    </div>
+                </div>
+				<div class="col-md-6 col-lg-4 other">
+                    <div class="portfolio-item">
+                        <img src="{% static 'assets/imgs/design-patterns-python.png' %} " class="img-fluid" alt=" Pygame Library ">
+                        <div class="content-holder">
+                        <a class="img-popup" href="{% static 'assets/imgs/design-patterns-python.png' %}"></a>
+						<a href="{% url 'designpatternEn' %}" target="_blank">
+                            <div class="text-holder">
+                            <h6 class="title"> Design Patterns in Python </h6>
+                            <p class="subtitle">  Design Pattern Projects </p>
+                            </div>
+						</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End of portfolio section -->
+
+    <!-- Blog Section -->
+    <section class="section" id="blog">
+        <div class="container">
+            <h6 class="section-title mb-0 text-center"> Recent Projects </h6>
+            <h6 class="section-subtitle mb-5 text-center">   The Latest Projects Uploaded in Python Club  </h6>
+
+            <div class="row" id="latestProjects" style="direction:ltr !important">
+                <div class="col-md-4">
+                    <div class="card border-0 mb-4" >
+                        <img src="{% static 'assets/imgs/OpenCV-Project.jpg' %}   " alt="" class="card-img-top w-100">
+                        <div class="card-body">
+                        <h6 class="card-title text-center">   Face Recognition Project  </h6>
+                        <p style="text-align:center">  Face recognition using OpenCV library and UI design with PyQt library  </p>
+                        <a href="http://vid.mohammadijoo.ir/pythonclub/Face_Detection.mp4" class="small text-muted" target="_blank">  
+                            <h6 class="text-center"> Download Preview Video   </h6>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card border-0 mb-4">
+                        <img src="{% static 'assets/imgs/Swap_Color_Game.jpg' %}  " alt="" class="card-img-top w-100">
+                        <div class="card-body">
+                            <h6 class="card-title text-center"> Cross Table Project   </h6>
+                            <p style="text-align:center">   Changing the color of cross table cells in Pygame </p>
+                            <a href="http://vid.mohammadijoo.ir/pythonclub/Swap_Color_Game.mp4" class="small text-muted" target="_blank" >
+                                  <h6 class="text-center"> Download Preview Video   </h6> 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card border-0 mb-4">
+                        <img src="{% static 'assets/imgs/HeadBall2.jpg' %} " alt="" class="card-img-top w-100">
+                        <div class="card-body">
+                            <h6 class="card-title text-center">  HeadBall2 Project </h5>
+                            <p style="text-align:center">    Two player HeadBall game with Pygame  </p>
+                            <a href="http://vid.mohammadijoo.ir/pythonclub/HeadBall_2Player.mp4" class="small text-muted" target="_blank">   
+                                <h6 class="text-center"> Download Preview Video   </h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- End of Blog Section -->
+
+    <!-- Testmonial Section -->
+		<!--
+    <section class="section" id="testmonial">
+        <div class="container">
+            <h6 class="section-title text-center mb-0">Testmonials</h6>
+            <h6 class="section-subtitle mb-5 text-center">What Our Clients Says</h6>
+            <div class="row">
+                <div class="col-md-4 my-3 my-md-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="media align-items-center mb-3">
+                                <img class="mr-3" src="assets/imgs/avatar.jpg" alt="">
+                                <div class="media-body">
+                                    <h6 class="mt-1 mb-0">John Doe</h6>
+                                    <small class="text-muted mb-0">Business Analyst</small>
+                                </div>
+                            </div>
+                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus enim modi, id dicta reiciendis itaque.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 my-3 my-md-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="media align-items-center mb-3">
+                                <img class="mr-3" src="assets/imgs/avatar-1.jpg" alt="">
+                                <div class="media-body">
+                                    <h6 class="mt-1 mb-0">Maria Garcia</h6>
+                                    <small class="text-muted mb-0">Insurance Agent</small>
+                                </div>
+                            </div>
+                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus enim modi, id dicta reiciendis itaque.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 my-3 my-md-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="media align-items-center mb-3">
+                                <img class="mr-3" src="assets/imgs/avatar-2.jpg" alt="">
+                                <div class="media-body">
+                                    <h6 class="mt-1 mb-0">Mason Miller</h6>
+                                    <small class="text-muted mb-0">Residential Appraiser</small>
+                                </div>
+                            </div>
+                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus enim modi, id dicta reiciendis itaque.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+		-->
+    <!-- End of Testmonial Section -->
+
+    
+
+{% endblock %}
+
+

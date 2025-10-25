@@ -1,0 +1,21 @@
+{% extends 'todo/base-en.html' %}
+
+{% block content %}
+
+
+    <div class="container" style="direction:ltr; margin-top:150px ; margin-bottom:20px !important; color: white">
+    <h1 class="text-left text-white"> User Registration: </h1>
+    <br>
+  <h2 class="text-left text-white"> {{ error }} </h2>
+    <br>
+
+  <form method="POST" style="direction:ltr; text-align:justify; color: black">
+    {% csrf_token %}
+    <h5 class="text-left text-white" style="direction:ltr; text-align:justify"> {{ form.as_p }} </h5>
+    <h2 "text-left text-white"> <button type="submit">  Register   </button> </h2>
+  </form> <br> <br> <br> <br> <br> <br> <br>
+  </div>
+   
+
+
+{% endblock %}

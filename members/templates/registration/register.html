@@ -1,0 +1,47 @@
+{% extends 'todo/base-en.html' %}
+
+{% block title %} Register   {% endblock %}
+
+{% block  metaContent %}    {% endblock %}
+
+
+{% block cssStyle %}  
+
+textarea.form-control {
+  height: 20rem !important;
+}
+input {
+    color: white !important;
+}
+
+{% endblock %}
+
+
+{% block content %}
+
+
+<div class="container mt-5 pt-5">
+    <h1 style="font-family: 'Caveat Brush', cursive; font-size:3rem" class="text-white pt-4 mt-4 mb-4">
+        Register
+    </h1>
+    <br><br>
+    
+    <div class="form-group mb-5 pb-5 text-white">
+        <form method='POST' class="p-2 text-white">
+            {% csrf_token %}
+            {{ form.as_p }}
+            
+            <button class="btn btn-secondary"> Register </button>
+        </form>
+    </div>
+    
+    
+    
+    
+</div>
+
+
+{% endblock %}
+
+
+

@@ -1,0 +1,90 @@
+{% extends 'todo/base-en.html' %}
+
+{% block title %} Edit Profile Page  {% endblock %}
+
+{% block cssStyle %}  
+
+textarea.form-control {
+  height: 15rem !important;
+  color: white !important;
+}
+body {
+    background-image: linear-gradient(to right, #2c3e50, #4ca1af); !important;
+}
+input {
+    color: white !important; 
+    font-weight: 700 !important;
+}
+{% endblock %}
+
+
+{% block content %}
+
+
+<div class="container text-white" style="margin-top:8rem; margin-bottom:4rem">
+    <h1 style="font-family: 'Caveat Brush', cursive; color:#DCC7AA" class="text-center mt-4 mb-4 text-white">
+        Edit Profile
+    </h1>
+    <br>
+    
+    {% if user.is_authenticated  %}
+        {% if user.id == profile.user.id  %}
+            <div class="form-group text-white">
+                <form method='POST' enctype="multipart/form-data" class="text-white">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    
+                    
+                    <button class="btn btn-secondary"> Update Profile Page </button>
+                </form>
+            </div>
+            
+            <script>
+                document.getElementById("id_bio").className = "form-control";  
+                document.getElementById("id_phone").className = "form-control";
+                document.getElementById("id_skills").className = "form-control";
+                document.getElementById("id_hobby").className = "form-control";
+                document.getElementById("id_website_url").className = "form-control";
+                document.getElementById("id_linkedin_url").className = "form-control";
+                document.getElementById("id_github_url").className = "form-control";
+                document.getElementById("id_stackoverflow_url").className = "form-control";
+                document.getElementById("id_instagram_url").className = "form-control";
+                document.getElementById("id_twitter_url").className = "form-control";
+                
+                document.getElementById("id_skills").placeholder = "Like: C#, Python, JavaScript, Java, Matlab, SolidWorks, Proteus, ...."; 
+                document.getElementById("id_hobby").placeholder = "Like: Mountain Climbing, Music, Hiking, Book Reading, Cinema, ..."; 
+                document.getElementById("id_website_url").placeholder = "Always write complete url with https.   like:   https://google.com"; 
+                document.getElementById("id_linkedin_url").placeholder = "Always write complete url with https.   like:   https://google.com";
+                document.getElementById("id_github_url").placeholder = "Always write complete url with https.   like:   https://google.com";
+                document.getElementById("id_stackoverflow_url").placeholder = "Always write complete url with https.   like:   https://google.com";
+                document.getElementById("id_instagram_url").placeholder = "Always write complete url with https.   like:   https://google.com";
+                document.getElementById("id_twitter_url").placeholder = "Always write complete url with https.   like:   https://google.com";
+            </script>
+            
+        {% else %}    
+            <h1 class="text-white mt-4 mb-4"> 
+                You Are not Authenticated to Edit This Page! 
+            </h1>
+        {% endif %}    
+    
+    {% else %}
+    
+        <hr><br>
+    
+        <h1 class="text-white mt-4 mb-4"> 
+            You Are not Authenticated to Edit This Page! 
+        </h1>
+    
+    {% endif %}
+    
+    <hr><br>
+    
+    
+    
+</div>
+
+
+
+
+
+{% endblock %}

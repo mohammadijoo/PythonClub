@@ -1,0 +1,109 @@
+{% extends 'todo/base-en.html' %}
+{% load static %}
+{% block title %} Django Club's Blog   {% endblock %}
+
+{% block  metaContent %}    {% endblock %}
+
+
+{% block  cssStyle %}    
+
+.myhover:hover {
+    color: #6B7A8F !important;
+}
+
+p {
+    text-align: justify !important;
+}
+
+{% endblock %}
+
+
+{% block content %}
+
+
+<div class="container" style="margin-top:8rem; margin-bottom:4rem;">
+    <div class="row">
+        
+        <h1 class="col-lg-12 text-center mb-4 " style="font-family: 'Caveat Brush', cursive; color:#DCC7AA">
+            User Profile  <br>
+        </h1> <br>
+        
+
+          <h3 class="col-lg-12 text-white text-center"> 
+                {{ page_user.user.first_name }}  {{ page_user.user.last_name }} 
+          </h3>
+                  
+          <div class="col-lg-4 mt-4 mb-4">
+              {% if page_user.profile_pic %}
+                <img src="{{ page_user.profile_pic.url }}"  style="max-width:8rem; height:auto" >
+              {% else %}
+                <img src="{% static 'img/default-profile-picture.jpg' %}"  style="width:100%; height:auto" >
+              {% endif %}
+          </div>
+          <div class="col-lg-8"></div> <br>
+                      
+          <div class="col-lg-12 mt-1 mb-4">
+              <h4 class="text-white" style="font-weight:900">Biography</h4>
+              {% if page_user.bio %}
+              <h5 class="text-justify mb-4" style="color:#DDD0C8;">{{ page_user.bio }}</h5>
+              {% endif %}
+              
+              {% if page_user.phone %}
+              <h5 class="text-white" style="font-weight:900"> Email </h5>
+              <h5 class="text-justify mb-4" style="color:#DDD0C8;">{{ page_user.user.email }}</h5>
+              {% endif %}
+              
+              {% if page_user.phone %}
+              <h5 class="text-white" style="font-weight:900"> Contact Number </h5>
+              <h5 class="text-justify mb-4" style="color:#DDD0C8;">{{ page_user.phone }}</h5>
+              {% endif %}
+              
+              {% if page_user.skills %}
+              <h5 class="text-white" style="font-weight:900"> Skills </h5>
+              <h5 class="text-justify mb-4" style="color:#DDD0C8;">{{ page_user.skills }}</h5>
+              {% endif %}
+              
+              {% if page_user.hobby %}
+              <h5 class="text-white" style="font-weight:900"> Hobbies </h5>
+              <h5 class="text-justify mb-4" style="color:#DDD0C8;">{{ page_user.hobby }}</h5>
+              {% endif %}
+          </div><br>
+                  
+                  <div class="col-lg-12 text-center">
+                      <!--<h5 class="card-title text-center" style="font-weight:600">Social Links</h5>-->
+                      <br>
+                      {% if page_user.website_url %}
+                      <a href="{{ page_user.website_url }}" target="_blank"><i class="fa fa-globe p-2 social" aria-hidden="true" style="font-size:2rem; color:#494d5f"></i></a>
+                      {% endif %}
+                      {% if page_user.stackoverflow_url %}
+                      <a href="{{ page_user.stackoverflow_url }}"  target="_blank"><i class="fa fa-stack-overflow p-2 social" aria-hidden="true" style="font-size:2rem; color:#494d5f"></i></a>
+                      {% endif %}
+                      {% if page_user.github_url %}
+                      <a href="{{ page_user.github_url }}" target="_blank"><i class="fa fa-github p-2 social" aria-hidden="true" style="font-size:2rem; color:#494d5f"></i></a>
+                      {% endif %}
+                      {% if page_user.linkedin_url %}
+                      <a href="{{ page_user.linkedin_url }}" target="_blank"><i class="fa fa-linkedin p-2 social" aria-hidden="true" style="font-size:2rem; color:#494d5f"></i></a>
+                      {% endif %}
+                      
+                      {% if page_user.instagram_url %}
+                      <a href="{{ page_user.instagram_url }}" target="_blank"><i class="fa fa-instagram p-2 social" aria-hidden="true" style="font-size:2rem; color:#494d5f"></i></a>
+                      {% endif %}
+                      {% if page_user.twitter_url %}
+                      <a href="{{ page_user.twitter_url }}" target="_blank"><i class="fa fa-twitter p-2 social" aria-hidden="true" style="font-size:2rem; color:#494d5f"></i></a>
+                      {% endif %}
+                  </div>
+
+        
+        <hr><br>
+        
+        
+        
+    </div>
+</div>
+
+
+
+{% endblock %}
+
+
+

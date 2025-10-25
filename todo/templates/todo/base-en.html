@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="A Forum for Python Programmers">
+    <meta name="author" content="Abolfazl Mohammadijoo">
+	<meta name="keyword" content="Python Club, Python Forum, Python Projects, Python Tutorial, Python Video Lecture, Python Tutor, Python Programming Projects, Python Online Tutor" />
+	
+		{% load static %}
+		<link rel="shortcut icon" href="{% static 'assets/imgs/Python.png' %} " type="image/x-icon">
+    <title>  Python Club </title>
+    
+    <!-- font icons -->
+    <link rel="stylesheet" href="{% static 'assets/vendors/themify-icons/css/themify-icons.css' %}">
+    <!-- Bootstrap + LeadMark main styles -->
+		<link rel="stylesheet" href="{% static 'assets/css/leadmark.css' %} ">
+		<!--<script src="https://kit.fontawesome.com/15084a512e.js" crossorigin="anonymous"></script>-->
+		
+	<link rel="stylesheet" href={% static 'assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css' %} rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+
+
+    <style>
+
+    .text-gradient {
+      background: -webkit-linear-gradient(62deg, #00f260 0%, #0575e6 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .text-gradient2 {
+      background: -webkit-linear-gradient(62deg, #2193b0, #6dd5ed );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .myCenter {
+        text-align:center !important;
+    }
+    .firstREM {
+        font-size: 1.8rem !important;
+    }
+    .myHover:hover {
+        background-color: #660000 !important;
+    }
+    .myHover2:hover {
+        color: #ff4c4c !important;
+    }
+    .myHover3:hover {
+        background-color: #CA3433 !important;
+    }	
+    
+    .myCentering {
+       left: 50% !important;
+       transform: translateX(-50%) !important;
+    }
+        
+        {% block cssStyle %}  {% endblock %}
+        
+    </style>
+
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home" style="font-family:'Montserrat', sans-serif;">
+
+    <!-- page Navigation -->
+    <nav class="navbar custom-navbar navbar-expand-lg navbar-light fixed-top justify-content-center" data-spy="affix" data-offset-top="10" style="direction: ltr; text-align: center">
+        <div class="container ">
+            <a class="navbar-brand" href="https://mohammadijoo.com" target="_blank">
+                <img src="{% static 'assets/imgs/logo-small.png' %}   " alt=" Abolfazl Mohammadijoo ">
+            </a>
+            <a class="navbar-brand ml-4" href="{% url 'home' %}" >
+                <img src="{% static 'assets/imgs/iran.png' %}"  style="width:50px " alt=" Persian ">
+            </a>
+            <button class="navbar-toggler mr-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="direction: ltr">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="direction: ltr">
+                <ul class="navbar-nav mr-auto" >
+					
+				
+									
+					<li class="nav-item">
+							<a class="nav-link" href="{% url 'en' %}"> Home  </a>
+					</li>
+					<!--<li class="nav-item">-->
+					<!--		<a class="nav-link" href="{% url 'currenttodosEn' %}">  Consultation Portal   </a>-->
+					<!--</li>-->
+					<li class="nav-item">
+							<a class="nav-link" href="{% url 'PythonProjectsEn' %}" target="_blank">  Python Projects   </a>
+					</li>
+					<li class="nav-item">
+							<a class="nav-link" href="https://abolfazlm.com" target="_blank">
+								<i class="fa fa-shopping-cart" aria-hidden="true" style="font-size:20px"></i>
+							</a>
+					</li>
+					<li class="nav-item">
+							<a class="nav-link" href="https://programmer-club.ir" target="_blank">
+								<i class="fa fa-code" aria-hidden="true" style="font-size:20px"></i>
+							</a>
+					</li>
+					<li class="nav-item">
+							<a class="nav-link" href="https://aspclub.ir" target="_blank">
+								<i class="fa fa-link" aria-hidden="true" style="font-size:20px"></i>
+							</a>
+					</li>
+					<li class="nav-item">
+							<a class="nav-link" href="https://django3.ir/en" target="_blank">
+								<i class="fa fa-database" aria-hidden="true" style="font-size:20px"></i>
+							</a>
+					</li>
+					<li class="nav-item">
+							<a class="nav-link" href="https://mohammadijoo.com/blog" target="_blank">
+								<i class="fa fa-rss" aria-hidden="true" style="font-size:20px;"></i>
+							</a>
+					</li>
+
+									
+									
+						
+					{% if user.is_authenticated %}
+	            
+        	            <li class="nav-item dropdown text-center" style="text-align: center !important">
+                          <a class="nav-link dropdown-toggle myHover2 text-center text-gradient" href="#" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="font-size:1.1rem">
+                              Hello  {% if user.first_name  %}  {{ user.first_name   }}   {% else %}  {{user.username}}    {% endif %}
+                          </a>
+                          <div class="dropdown-menu justify-content-center " aria-labelledby="dropdown05" style="text-align: center !important; min-width:15em">
+                            {% if user.profile.id %}
+                            <a class="dropdown-item myHover3 text-center" href="{% url 'show_profile_page' user.profile.id %}" style="text-align:center; font-size:1rem">Profile Page</a>
+                            <a class="dropdown-item myHover3 text-center" href="{% url 'edit_profile_page' user.profile.id %}" style="text-align:center; font-size:1rem">Edit Profile Page</a>
+                            {% else %}
+                            <a class="dropdown-item myHover3 text-center" href="{% url 'create_profile_page' %}" style="text-align:center; font-size:1rem">Create Profile Page</a>
+                            {% endif %}
+                          	<a class="dropdown-item myHover3 text-center" href="{% url 'edit_profile' %}" style="text-align:center; font-size:1rem">Edit Settings</a>
+                          </div>
+                        </li>
+                        
+                        <li class="nav-item text-center"><a href="{% url 'logout' %}" class="nav-link myHover2" style="font-size:1.1rem">   Logout  </a></li>
+        	            
+        	        {% else %}
+        	            <li class="nav-item text-center"><a href="{% url 'login' %}" class="nav-link myHover2" style="font-size:1.1rem">   Login  </a></li>
+          
+        	            <li class="nav-item text-center"><a href="{% url 'register' %}" class="nav-link myHover2" style="font-size:1.1rem">   Register  </a></li>
+        	        {% endif %}
+						
+						
+									
+									
+									
+									
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Of Second Navigation -->
+
+
+
+
+
+  {% block content %} {% endblock %}
+
+
+
+
+<!-- Contact Section -->
+    <section id="contact" class="section has-img-bg pb-0">
+        <div class="container">
+            <div class="row align-items-center" id="myFooter">
+                
+                
+                
+                <div class="col-md-5 my-3" style="direction: ltr; font-family:'Montserrat', sans-serif;">
+                    <h6 class="mb-0"> <strong>Contact Number:</strong> </h6> 
+                    <p class="mb-4" id="myPhone" style="direction: ltr"> +98 912 490 8372 </p>
+
+                    <h6 class="mb-0">  <strong> Address: </strong>  </h6>
+                    <p class="mb-4">
+					Namjoo Ave, Enghelab St, Tehran, IRAN
+					</p>
+
+                    <h6 class="mb-0">  <strong> Email: </strong>  </h6>
+                    <p class="mb-0">info@pythonclub.ir</p>
+                    <p></p>
+
+					<a href="https://wa.me/989124908372" target="_blank"><i class="fa fa-whatsapp p-2" aria-hidden="true"></i></a>
+          <a href="https://t.me/abolfazlm1363?&text=Abolfazl%2520Mohammadijoo" target="_blank"><i class="fa fa-telegram p-2" aria-hidden="true"></i></a>
+          <a href="https://github.com/mohammadijoo" target="_blank"><i class="fa fa-github p-2" aria-hidden="true"></i></a>
+          <a href="https://stackoverflow.com/users/12603692/abolfazl?tab=profile" target="_blank"><i class="fa fa-stack-overflow p-2" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/abolfazl-mohammadijoo-ab573b6/" target="_blank"><i class="fa fa-linkedin p-2" aria-hidden="true"></i></a>
+					<a href="https://www.youtube.com/channel/UCwG1CdAh6Me3-UeZsyVytLw?view_as=subscriber" target="_blank"><i class="fa fa-youtube p-2" aria-hidden="true"></i></a>
+					<a href="https://twitter.com/mohammadijoo/" target="_blank"><i class="fa fa-twitter p-2" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/abolfazl_m1363/" target="_blank"><i class="fa fa-instagram p-2" aria-hidden="true"></i></a>
+
+                </div>
+                <div class="col-md-7 controls" style="direction: ltr; font-family:'Montserrat', sans-serif;">
+                    
+                    
+                    <form id="contact-form" method="post" action="{% url 'contactEn' %}" role="form">
+                         {% csrf_token %}
+                    <div class="messages"></div>
+                        <h4 class="mb-4"> Please Leave us a Message! </h4>
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                <label for="form_name" style="color:#277ccc">Name * </label>
+                              <input id="form_name" type="text" name="name" class="form-control" placeholder=" Your Name *" required="required" data-error="Please Enter a Valid Name.">
+                              <div class="help-block with-errors"></div>
+                            </div>
+                            
+                            <div class="form-group col-sm-4">
+                                <label for="form_email" style="color:#277ccc">Email *</label>
+                                  <input id="form_email" type="email" name="email" class="form-control" placeholder=" Your Email *" required="required" data-error="Please Enter a Valid Email.">
+                                  <div class="help-block with-errors"></div>
+                            </div>
+                            
+                            <div class="form-group col-sm-4">
+                                <label for="form_mobile" style="color:#277ccc">   Mobile *</label>
+                                <input id="form_mobile" type="phone" name="phone" class="form-control" placeholder=" Your Mobile Number *" required="required" data-error=" Please Enter a Valid Contact Number.">
+                                <div class="help-block with-errors"></div>    
+                            </div>
+                            
+                            <div class="form-group col-12">
+                                <label for="form_message " style="text-align: right !important; color:#277ccc" > Message *</label>
+                                <textarea id="form_message" name="message" class="form-control" placeholder="  Your Message *" rows="7" required="required" data-error="Please, leave us a message."></textarea>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            
+                            <div class="form-group col-12 mb-0">
+                                <input type="submit" class="btn btn-success btn-send" value="Send Message">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- Page Footer -->
+            <footer class="mt-5 py-4 border-top border-secondary">
+                <p class="mb-0 small" style="direction: ltr; font-family:'Montserrat', sans-serif;">
+                    &copy; <script>document.write(new Date().getFullYear())</script>  Designe By,  <a href="https://mohammadijoo.com" target="_blank">  Abolfazl Mohammadijoo  </a>   
+                </p>
+            </footer>
+            <!-- End of Page Footer -->
+        </div>
+    </section>
+
+	<!-- core  -->
+    <script src="{% static 'assets/vendors/jquery/jquery-3.4.1.js' %}  "></script>
+    <script src="{% static 'assets/vendors/bootstrap/bootstrap.bundle.js' %} "></script>
+
+    <!-- bootstrap 3 affix -->
+	<script src="{% static 'assets/vendors/bootstrap/bootstrap.affix.js' %}  "></script>
+
+    <!-- Isotope -->
+    <script src="{% static 'assets/vendors/isotope/isotope.pkgd.js' %}  "></script>
+
+    <!-- LeadMark js -->
+    <script src="{% static 'assets/js/leadmark.js' %}  "></script>
+
+</body>
+</html>

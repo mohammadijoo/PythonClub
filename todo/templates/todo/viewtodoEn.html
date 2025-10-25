@@ -1,0 +1,38 @@
+{% extends 'todo/base-en.html' %}
+
+{% block content %}
+
+
+<div class="container" style="direction:lte; margin:150px; color: white;" >
+
+
+<h3 class="text-left h3-responsive">   {{ error }}  </h3>
+
+<h2 class="text-left h2-responsive">   {{ todo.title }}  </h2> <br>
+
+
+
+<form method="POST">
+  {% csrf_token %}
+  <h5 class="text-left h5-responsive">   {{ form.as_p }}   </h5>
+  <h3 class="text-left h3-responsive">
+      <button type="submit" style="background-color: #FFD2D7"> <b> Save  </b>  </button>  
+  </h3>
+</form>
+
+<form method="POST" action="{% url 'completetodoEn' todo.id %}">
+  {% csrf_token %}
+  <h3 class="text-left h3-responsive"> <button type="submit" style="background-color: #90E4CD"> <b>  Completed </b> </button> </h3>
+</form>
+
+<form method="POST" action="{% url 'deletetodoEn' todo.id %}">
+  {% csrf_token %}
+  <h3 class="text-left h3-responsive"> <button type="submit" style="background-color: #FFE9C5"> <b>  Delete </b> </button> </h3>
+</form>
+
+
+</div>
+
+{% endblock %}
+
+

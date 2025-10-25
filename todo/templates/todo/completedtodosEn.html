@@ -1,0 +1,32 @@
+{% extends 'todo/base-en.html' %}
+
+{% block content %}
+
+
+<div class="container" style="direction:ltr; margin:150px; color: black;" >
+
+<h2 style="color: #add9cf ;" class="text-left h2-responsive" >  Completed Tasks:   </h2> <br><br>
+
+<ul style="list-style-type: none;">
+  {% for todo in todos %}
+  <li>
+    <h3 style="color: #b5add9" class="text-left h3-responsive">
+        <a href="{% url 'viewtodoEn'  todo.id  %}">
+      {% if todo.important %} <b> {% endif %} {{ todo.title }} {% if todo.important %}
+       </b> {% endif %}
+        </a>
+    </h3>
+    <h3 class="text-left h3-responsive">   Request Explanation:  </h3>
+    <h5 class="text-left h5-responsive">{% if todo.memo %} {{ todo.memo }} {% endif %}</h5>
+  <h5 class="text-left h5-responsive">  Request Date:  <span class="badge bg-danger">{{ todo.datecompleted|date:' Y-M-d ' }}</span></h5>
+  <h5 class="text-left h5-responsive">  Request Hour:  <span class="badge bg-info">{{ todo.datecompleted|date:' H:i ' }}</span></h5>
+
+  </li>
+  <br><hr><br>
+  {% endfor %}
+</ul>
+
+
+</div>
+
+{% endblock %}

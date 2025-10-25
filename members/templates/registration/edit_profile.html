@@ -1,0 +1,54 @@
+{% extends 'todo/base-en.html' %}
+
+{% block title %} Edit Your Profile   {% endblock %}
+
+{% block  metaContent %}    {% endblock %}
+
+
+{% block cssStyle %}  
+
+textarea.form-control {
+  height: 20rem !important;
+  color: white !important;
+}
+body {
+    background-image: linear-gradient(to right, #2c3e50, #4ca1af); !important;
+}
+input {
+    color: white !important; 
+    font-weight: 700 !important;
+}
+
+{% endblock %}
+
+
+{% block content %}
+
+
+<div class="container text-white" style="margin-top:8rem; margin-bottom:4rem">
+    <h1 style="font-family: 'Caveat Brush', cursive; font-size:3rem; color:#DCC7AA" class="mt-4 mb-4 text-center">
+        Edit Settings
+    </h1>
+    <br><br>
+        
+    <div class="form-group text-white">
+        <form method='POST' class="text-white">
+            {% csrf_token %}
+            {{ form.as_p }}
+            
+            <button class="btn btn-secondary"> Update Profile </button>
+        </form>
+    </div>
+    
+    <hr><br>
+    
+    
+    
+    
+</div>
+
+
+{% endblock %}
+
+
+

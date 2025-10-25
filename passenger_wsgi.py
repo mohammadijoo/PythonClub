@@ -1,0 +1,1 @@
+from pythonclubir.wsgi import application

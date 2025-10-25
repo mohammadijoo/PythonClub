@@ -1,0 +1,32 @@
+{% extends 'todo/base-en.html' %}
+
+{% block content %}
+
+{% load static %}
+
+
+<div class="container" style="direction:ltr; margin-top:150px; color: white;" id="myCreate">
+
+  <h1 class="text-left h1-responsive text-white"> Creating Request   </h1>
+    <br>
+  <h3 class="text-left h3-responsive text-white"> {{ error }} </h3>
+    <br>
+
+  <form method="POST" style="direction:ltr; text-align:justify; color: black; margin-bottom: 100px;">
+    {% csrf_token %}
+    <h5 class="text-left h5-responsive text-white"> {{ form.as_p }} </h5>
+    
+    <h3 class="text-left h3-responsive text-white"> 
+        <button type="submit"> Create Request  </button> 
+    </h3>
+    <br><br><br>
+  </form>
+
+
+</div>
+
+
+
+
+
+{% endblock %}

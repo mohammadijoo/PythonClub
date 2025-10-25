@@ -1,0 +1,32 @@
+{% extends 'todo/base.html' %}
+
+{% block content %}
+
+{% load static %}
+
+
+<div class="container" style="direction:rtl; margin:150px 0 100px 0; color: black;" id="myCreate">
+
+  <h1 class="text-right h1-responsive text-black"> ایجاد درخواست </h1>
+    <br>
+  <h3 class="text-right h3-responsive text-black"> {{ error }} </h3>
+    <br>
+
+  <form method="POST" style="direction:rtl; text-align:justify; color: black; margin-bottom: 100px;">
+    {% csrf_token %}
+    <h5 class="text-right h5-responsive text-black"> {{ form.as_p }} </h5>
+    
+    <h3 class="text-right h3-responsive text-black"> 
+        <button type="submit"> ایجاد درخواست </button> 
+    </h3>
+    <br><br><br>
+  </form>
+
+
+</div>
+
+
+
+
+
+{% endblock %}
