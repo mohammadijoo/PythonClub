@@ -1,6 +1,6 @@
 # Python Club Website
 <h3 align="left">
- These files are for a website with this domain "https://pythonclub.ir" which was live at server and now is not available anymore.
+ These files are source codes of a website created by "Django Framework", with this domain "https://pythonclub.ir" which was live at server and now is not available anymore.
 </h3>
 <h3 align="left">
  There is a video of this website at the link below that shows its functionalities: <br><br><br>
